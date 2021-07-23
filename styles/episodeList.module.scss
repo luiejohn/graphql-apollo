@@ -1,0 +1,16 @@
+.episode_item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  
+    & > * {
+      display: flex;
+      justify-content: flex-start;
+    }
+  
+    &_name {
+      & > *:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+  }

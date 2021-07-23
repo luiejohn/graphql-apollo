@@ -1,0 +1,85 @@
+.container {
+  // min-height: 100vh;
+  // padding: 0 0.5rem;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+
+  width: 70%;
+  margin: 0 auto;
+
+}
+
+.main {
+  padding: 25px 0;
+  // padding: 5rem 0;
+  // flex: 1;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+}
+
+.pageHeader {
+  font-size: 25px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  margin: 30px 0;
+}
+
+.characterList {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px;
+}
+
+.imageLarge {
+  width: 250px;
+  height: 250px;
+}
+
+.imageContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.charDetails {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-radius: 5px;
+
+  &_container {
+    border: 1px solid #ccc;
+    margin:20px 0;
+    padding: 15px;
+  }
+
+  & > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.header_medium {
+  font-size: 18px;
+  color: #4d4d4d;
+  width: 100%;
+  text-align: center;
+  margin: 5px 0 15px 0;
+}
+
+.episode_list {
+  border: 1px solid #ccc;
+  padding: 15px;
+
+  & > *:not(:last-child) {
+    border-bottom: 1px solid #ccc;;
+  }
+}
+
